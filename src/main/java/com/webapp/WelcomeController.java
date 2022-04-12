@@ -16,4 +16,9 @@ public class WelcomeController {
 	public String printMessage(@PathVariable String name) {
 		return "Hi, " + name +" Welcome to my webapp";
 	}
+	
+	@GetMapping("/contact")
+	public String contact() {
+		return "info_contact@support.com";
+	}
 }
