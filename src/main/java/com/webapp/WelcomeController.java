@@ -19,7 +19,7 @@ public class WelcomeController {
 		return "this is default message!!!!!";
 	}
 	
-	@GetMapping("/{name}")
+	@GetMapping("/user/{name}")
 	public String printMessage(@PathVariable String name) {
 		return "Hi, " + name +" Welcome to my webapp";
 	}
